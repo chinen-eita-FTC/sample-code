@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+    // NOP
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task runApp(type: JavaExec) {
+  def num1 = project.hasProperty("num1") ? project.property("num1") : ""
+  def num2 = project.hasProperty("num2") ? project.property("num2") : ""
+  main = "org.education.BootApp"
+  classpath = sourceSets.main.runtimeClasspath
+  args(num1, num2)
+}
