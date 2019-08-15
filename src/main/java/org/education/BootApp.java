@@ -12,7 +12,7 @@ public class BootApp {
     final String Illegal_INPUT_VALUE = "[ERROR]入力値の個数は2個以上必要です。";
     final String UNEXPECTED_ERROR = "[ERROR]実装内容をご確認ください。";
     
-    /**
+  /**
 	 * 起動と同時にインスタンスを同クラスのインスタンスを生成
 	 * @param args アプリケーション起動時に入力される値
 	 */
@@ -20,7 +20,7 @@ public class BootApp {
 		BootApp bootApp = new BootApp(args);
 	}
 
-    /**
+  /**
 	 * インスタンス時に処理を実行
 	 * @param args アプリケーション起動時に入力される値
 	 */
